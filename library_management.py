@@ -1,6 +1,6 @@
 """
 Library Management & Fine Calculation System
---------------------------------------------
+-------------------------------------------
 Features:
 - Book Inventory  : Add, search, update, view books (with categories).
 - Member Management: Register members, track borrowed books.
@@ -25,7 +25,7 @@ ISSUE_DAYS = 14           # Default issue period in days
 DATE_FORMAT = "%d-%m-%Y"  # For displaying dates
 
 
-# ----------------- DATA MODELS -----------------
+# ----------------- DATA MODELS ----------------
 @dataclass
 class Book:
     book_id: str
@@ -131,7 +131,7 @@ def check_and_update_block_status(member: Member) -> None:
         member.blocked = False
 
 
-# ----------------- BOOK FUNCTIONS -----------------
+# ----------------- BOOK FUNCTIONS ----------------
 def add_book() -> None:
     print("\n--- Add New Book ---")
     book_id = input("Enter Book ID: ").strip()
@@ -561,3 +561,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
